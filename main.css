@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+}
+
+.list-tags {
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+}
+
+.list-tags ul {
+    display: flex;
+}
+
+.list-tags ul li {
+    padding: 0px 30px;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 7px;
+    align-items: center;
+}
+.dropdown {
+    display: none !important;
+}
+
+/* hero section */
+
+.hero-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23vh;
+    line-height: 45px;
+}
+
+.hero-container h1{
+    font-weight: 900;
+}
+
+input{
+    height: 9vh;
+    width: 60%;
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+    .input-tag-hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section{
+        padding: 0px 20px;
+    }
+}
+
+
+
+
+@media(max-width:900px) {
+    .list-tags {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 30px;
+    }
+
+    .dropdown {
+        display: none !important;
+        width: 100%;
+        height:auto;
+        background-color: black;
+        color: white;
+
+    }
+
+    .list-tags ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    button {
+        background-color: brown;
+        color: white;
+        height: 50px;
+        width: 120px;
+        border: none;
+        border-radius: 7px;
+        align-items: center;
+        margin: 15px 0px;
+    }
+}
